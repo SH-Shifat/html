@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            
+            <form id="login" class="input-group">
+                <input type="email" class="input-field" placeholder="Username or email" required>
+                <input type="password" class="input-field" id="pwd" name="pwd" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <span>Remember me</span>
+                <a href="#" class="Forget" >Forget Password</a>
+                <button type="submit" class="submit-btn"> Log In</button>
+
+
+
+
+
+                <div class="social-signin-div">
+                    <div class="social-divider">
+                      <span>or</span>
+                    </div>
+                    <div class="google-div social-div pull-left">
+                      <a href="https://www.google.com/" id="glogin" class="btn btn-social btn-google">
+                        <span class="fa google" > <img src="google.png" alt=""> </span>Google
+                      </a>
+                    </div>
+                    <div class="google-div social-div pull-left">
+                        <a href="https://www.facebook.com/" id="glogin" class="btn btn-social btn-facebook ">
+                          <span class="fa facebook" > <img src="facebook.png" alt=""> </span>Facebook
+                        </a>
+                      </div>
+                <p style="display:block;margin:10px 0px;"></p>
+                <div class="google-div social-div pull-left">
+                    <a href="https://www.linkedin.com/" id="glogin" class="btn btn-social btn-linkedin ">
+                      <span class="fa linkedin" > <img src="linked.png" alt=""> </span>Linkedin
+                    </a>
+                  </div>
+                  <div class="google-div social-div pull-left">
+                    <a href="https://www.github.com/" id="glogin" class="btn btn-social btn-git ">
+                      <span class="fa git" > <img src="git.png" alt=""> </span>GitHub
+                    </a>
+                  </div>
+                  <div   class="createA"><a href="https://www.geeksforgeeks.org/why-create-an-account-on-geeksforgeeks/" >Why Create an Account?</a></div>
+                  <div class="tnc">
+                      By creating this account, you agree to our <a href="https://www.geeksforgeeks.org/privacy-policy/">Privacy Policy</a> &amp; <a href="https://www.geeksforgeeks.org/cookie-policy/" target="_blank">Cookie Policy</a>.
+                  </div>
+                </div>
+            </form>
+            
+
+            <form id="register" class="input-group">
+               
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" id="pwd" name="pwd" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Institution/Organization" required>
+                <input type="checkbox" class="check-box"> <span>I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+                
+                 <div class="social-signin-div">
+                    <div class="social-divider">
+                      <span>or</span>
+                    </div>
+                    <div class="google-div social-div pull-left">
+                      <a href="https://www.google.com/" id="glogin" class="btn btn-social btn-google">
+                        <span class="fa google" > <img src="google.png" alt=""> </span>Google
+                      </a>
+                    </div>
+                    <div class="google-div social-div pull-left">
+                        <a href="https://www.facebook.com/" id="glogin" class="btn btn-social btn-facebook ">
+                          <span class="fa facebook" > <img src="facebook.png" alt=""> </span>Facebook
+                        </a>
+                      </div>
+                <p style="display:block;margin:10px 0px;"></p>
+                <div class="google-div social-div pull-left">
+                    <a href="https://www.linkedin.com/" id="glogin" class="btn btn-social btn-linkedin ">
+                      <span class="fa linkedin" > <img src="linked.png" alt=""> </span>Linkedin
+                    </a>
+                  </div>
+                  <div class="google-div social-div pull-left">
+                    <a href="https://www.github.com/" id="glogin" class="btn btn-social btn-git ">
+                      <span class="fa git" > <img src="git.png" alt=""> </span>GitHub
+                    </a>
+                  </div>
+                
+                  <div   class="createA"><a href="https://www.geeksforgeeks.org/why-create-an-account-on-geeksforgeeks/" >Why Create an Account?</a></div>
+                    <div class="tnc">
+                        By creating this account, you agree to our <a href="https://www.geeksforgeeks.org/privacy-policy/">Privacy Policy</a> &amp; <a href="https://www.geeksforgeeks.org/cookie-policy/" target="_blank">Cookie Policy</a>.
+                    </div>
+                  </div>
+            </form>
+             
+        </div>
+
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left ="-400px";
+            y.style.left ="50px";
+            z.style.left ="110px";
+        }
+
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px";
+            z.style.left ="0px";
+        }
+
+    </script>
+</body>
+</html>
